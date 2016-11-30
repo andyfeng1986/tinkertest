@@ -1,0 +1,10 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':third-party:aosp-dexutils')
+    compile project(':third-party:bsdiff-util')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
